@@ -1,0 +1,97 @@
+.icon
+{
+
+}
+.icon-like {
+    background-image: url("../images/icons/like.png");
+    background-position: center center;
+}
+.icon-like-wt {
+    background-image: url("../images/icons/like_wt.png");
+    background-position: center center;
+}
+.icon-comment {
+    background-image: url("../images/icons/comment.png");
+    background-position: center center;
+}
+.icon-comment-wt {
+    background-image: url("../images/icons/comment_wt.png");
+    background-position: center center;
+}
+.icon-gift {
+    background-image: url("../images/icons/gift.png");
+    background-position: center center;
+}
+.icon-gift-wt {
+    background-image: url("../images/icons/gift_wt.png");
+    background-position: center center;
+}
+.icon-forword {
+    background-image: url("../images/icons/forward_y.png");
+    background-position: center center;
+}
+.icon-like_thc {
+    background-image: url("../images/icons/like_thc.png");
+    background-position: center center;
+}
+.icon_location {
+    background: url("../images/icons/location.png") no-repeat scroll 0 0px, transparent url("../images/head_3.png") no-repeat scroll center bottom !important;
+    padding: 7px 0 30px 30px !important;
+}
+.icon-favorites {
+    background-image: url("../images/icons/favorites.png") !important;
+}
+.icon-gift_thc {
+    background-image: url("../images/icons/gift_thc.png") !important;
+}
+.icon-friends{
+    background-image: url("../images/icons/friends_thc.png") !important;
+}
+.icon-food{
+    background-image: url("../images/icons/food_thc.png") !important;
+}
+.icon-wallets {
+    background-image: url("../images/icons/wallets_thc.png") !important;
+    background-position: 8px center !important;
+}
+.icon-demas{
+    background-image: url("../images/icons/demas_thc.png") !important;
+}
+.icon-profile{
+    background-image: url("../images/icons/profile.png") !important;
+}
+.na {
+    background-position: -5px center;
+    background-repeat: no-repeat;
+    padding: 4px 0 4px 39px;
+}
+.na-soup{
+background-image:url(../images/icons/soup.png);
+}
+.na-noodles{
+background-image:url(../images/icons/noodles.png);
+}
+.na-hot-coffee{
+background-image:url(../images/icons/hot_coffee.png);
+}
+.na-cold-drinks{
+background-image:url(../images/icons/cold_drinks.png);
+}
+.na-croissant{
+background-image:url(../images/icons/croissant.png);
+}
+.na-shakes{
+background-image:url(../images/icons/shakes.png);
+}
+.na-grill{
+background-image:url(../images/icons/grill.png);
+}
+.na-burger{
+background-image:url(../images/icons/burger.png);
+}
+.na-smoothies{
+background-image:url(../images/icons/smoothies.png);
+}
+.na-salad{
+background-image:url(../images/icons/salads.png);
+}
