@@ -1,0 +1,97 @@
+.icon
+{
+
+}
+.icon-like {
+    background-image: url("../images/icons/like.d307355efd64.png");
+    background-position: center center;
+}
+.icon-like-wt {
+    background-image: url("../images/icons/like_wt.872b22a4e8e8.png");
+    background-position: center center;
+}
+.icon-comment {
+    background-image: url("../images/icons/comment.d2864be2e3c1.png");
+    background-position: center center;
+}
+.icon-comment-wt {
+    background-image: url("../images/icons/comment_wt.4b57f9bf55d7.png");
+    background-position: center center;
+}
+.icon-gift {
+    background-image: url("../images/icons/gift.4030653a206c.png");
+    background-position: center center;
+}
+.icon-gift-wt {
+    background-image: url("../images/icons/gift_wt.64098a8d0719.png");
+    background-position: center center;
+}
+.icon-forword {
+    background-image: url("../images/icons/forward_y.8fb58ecfa39f.png");
+    background-position: center center;
+}
+.icon-like_thc {
+    background-image: url("../images/icons/like_thc.322f265dd415.png");
+    background-position: center center;
+}
+.icon_location {
+    background: url("../images/icons/location.6c90f5f52ba6.png") no-repeat scroll 0 0px, transparent url("../images/head_3.3bdf0a57756d.png") no-repeat scroll center bottom !important;
+    padding: 7px 0 30px 30px !important;
+}
+.icon-favorites {
+    background-image: url("../images/icons/favorites.1bb2183bf6b8.png") !important;
+}
+.icon-gift_thc {
+    background-image: url("../images/icons/gift_thc.1f3496b2892d.png") !important;
+}
+.icon-friends{
+    background-image: url("../images/icons/friends_thc.46417a97a6e6.png") !important;
+}
+.icon-food{
+    background-image: url("../images/icons/food_thc.c529ee234fc4.png") !important;
+}
+.icon-wallets {
+    background-image: url("../images/icons/wallets_thc.67c57ae76c74.png") !important;
+    background-position: 8px center !important;
+}
+.icon-demas{
+    background-image: url("../images/icons/demas_thc.8567bf76c14a.png") !important;
+}
+.icon-profile{
+    background-image: url("../images/icons/profile.299da56209b5.png") !important;
+}
+.na {
+    background-position: -5px center;
+    background-repeat: no-repeat;
+    padding: 4px 0 4px 39px;
+}
+.na-soup{
+background-image:url("../images/icons/soup.f671d5fe50ed.png");
+}
+.na-noodles{
+background-image:url("../images/icons/noodles.a38f29a523de.png");
+}
+.na-hot-coffee{
+background-image:url("../images/icons/hot_coffee.4c9ff8cb9cee.png");
+}
+.na-cold-drinks{
+background-image:url("../images/icons/cold_drinks.f4c9f7e64de8.png");
+}
+.na-croissant{
+background-image:url("../images/icons/croissant.db829caeaf93.png");
+}
+.na-shakes{
+background-image:url("../images/icons/shakes.5ff48b0e3eff.png");
+}
+.na-grill{
+background-image:url("../images/icons/grill.3e35b1539c2d.png");
+}
+.na-burger{
+background-image:url("../images/icons/burger.5ae2c2b4e4e9.png");
+}
+.na-smoothies{
+background-image:url("../images/icons/smoothies.ecd61100d9bc.png");
+}
+.na-salad{
+background-image:url("../images/icons/salads.f955bc9ca00c.png");
+}
