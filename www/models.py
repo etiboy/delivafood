@@ -15,6 +15,7 @@ class Area(models.Model):
 class Kitchen(models.Model):
 	area = models.ForeignKey(Area, on_delete=models.SET_NULL, null=True)
 	name = models.CharField(max_length=200)
+	slug = models.SlugField(unique=True)
 	description = models.CharField(max_length=500)
 	photo_1 = models.CharField(max_length=200)
 	photo_2 = models.CharField(max_length=200)
@@ -49,6 +50,7 @@ class Food(models.Model):
 	foodCategory = models.ForeignKey(FoodCategory, on_delete=models.SET_NULL, null=True)
 	cuisine = models.ForeignKey(Cuisine, on_delete=models.SET_NULL, null=True)
 	name = models.CharField(max_length=200)
+	slug = models.SlugField(unique=True)
 	description = models.CharField(max_length=500)
 	price = models.DecimalField(max_digits=100, decimal_places=2)
 	vegetarian = models.CharField(max_length=7, choices=VEGETARIAN_OPTIONS)
@@ -60,6 +62,10 @@ class Food(models.Model):
 
 	def __str__(self):
 		return self.name
+
+class TodaySpecial(models.Model):
+	food = models.ForeignKey(Food, on_delete=models.SET_NULL, null=True)
+
 
 
 

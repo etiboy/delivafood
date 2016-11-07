@@ -1,0 +1,173 @@
+
+{% extends 'base.html' %}
+{% load staticfiles %}
+	{% block content %}
+	
+	
+	
+	<div class="index_page_content">
+		<div class="container">
+			<div class="row">
+				<div class="left_content">
+					<div class="fixed_bar">
+						<h4 class="filter"><i class="fa fa-filter"></i> FILTER</h4>
+						<div class="slide_left">
+							<div class="subpage_left search_left">
+								<h3 class="filter_icon">SORT BY</h3>
+								<ul class="checkbox radiobox">
+									<li>
+										<input id="radio1" name="a" type="radio">
+										<label for="radio1">Price - Low to High</label>
+									</li>
+									<li>
+										<input id="radio2" name="a" type="radio">
+										<label for="radio2">Price - Hight to Low</label>
+									</li>
+									<li>
+										<input id="radio3" name="a" type="radio">
+										<label for="radio3">Rating Hight to Low</label>
+									</li>
+								</ul>
+								<h3 class="location_icon">location</h3>
+								<span class="selected_location"><a href="#"></a>Koramangala</span>
+								<ul class="main_search_list">
+									<li><a>Popular Locations</a></li>
+									<li><a href="#">BTM <span>(156)</span></a></li>
+									<li><a href="#">HSR <span>(62)</span></a></li>
+									<li><a href="#">Jayanagar <span>(16)</span></a></li>
+									<li><a href="#">Indiranagar <span>(12)</span></a></li>
+								</ul>
+								<h3 class="cuisine_icon">CUISINE</h3>
+								<ul class="checkbox radiobox">
+									<li>
+										<input id="radio12" name="b" type="radio">
+										<label for="radio12">Continental (52)</label>
+									</li>
+									<li>
+										<input id="radio13" name="b" type="radio">
+										<label for="radio13">Chinees (8)</label>
+									</li>
+									<li>
+										<input id="radio14" name="b" type="radio">
+										<label for="radio14">Japanese (12)</label>
+									</li>
+									<li>
+										<input id="radio4" name="b" type="radio">
+										<label for="radio4">Sushi (25)</label>
+									</li>
+									<li>
+										<input id="radio5" name="b" type="radio">
+										<label for="radio5">Steakhouse (62)</label>
+									</li>
+									<li>
+										<input id="radio6" name="b" type="radio">
+										<label for="radio6">Seafood (35)</label>
+									</li>
+									<li>
+										<input id="radio7" name="b" type="radio">
+										<label for="radio7">African (54)</label>
+									</li>
+									<li>
+										<input id="radio8" name="b" type="radio">
+										<label for="radio8">Italian (23)</label>
+									</li>
+									<li>
+										<input id="radio9" name="b" type="radio">
+										<label for="radio9">Asian (20)</label>
+									</li>
+									<li>
+										<input id="radio10" name="b" type="radio">
+										<label for="radio10">Thai (45)</label>
+									</li>
+									<li>
+										<input id="radio11" name="b" type="radio">
+										<label for="radio11">Cafe (80)</label>
+									</li>
+								</ul>								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="display_bar">
+					<div class="row">
+						<div class="col-md-12 col-ms-12  col-xs-12">
+							<div class="page_serach_result">
+								<h3 class="search_page_head">Restaurants in Koramangala</h3>
+								<div class="full_results">
+									<div class="search_item">
+										<div class="search_item_body">
+											<div class="left_box">
+												<h3>MogiMirim</h3>
+												<img src="{% static 'images/img11.jpg' %}">
+												<div class="left_box_info">
+													<h4>Meals start at</h4>
+													<span><sup>Rs</sup>200<sup>00</sup></span><br>
+													<a href="restaurant_product.html">See all Menu</a>
+													<a href="#">Location</a>
+												</div>
+											</div>
+											<div class="right_box">
+												<ul>
+													<li><a href="#"><img src="{% static 'images/img1.jpg' %}"></a></li>
+													<li><a href="#"><img src="{% static 'images/img2.jpg' %}"></a></li>
+													<li><a href="#"><img src="{% static 'images/img3.jpg' %}"></a></li>
+													<li><a href="#"><img src="{% static 'images/img2.jpg' %}"></a></li>
+													<li><a href="#"><img src="{% static 'images/img3.jpg' %}"></a></li>
+													<li><a href="restaurant_product.html"><img src="{% static 'images/img_demo.jpg' %}"><span>50+</span></a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="search_item_foot">
+											<div class="row">
+												<div class="col-md-7">
+													<address>
+														<b>Koramangala ›</b> 59, 1st Floor, Diagonally Opposite JNC, Industrial...<BR>
+														<b>Casual Dining ›</b> Cafe, American
+													</address>
+												</div>
+												<div class="col-md-5">
+													<div class="menu_item_foot">
+														<div class="right">
+															<span class="vote">575 votes</span>
+															<ul>
+																<li class="active">
+																	4.5
+																</li>
+																<li>
+																	<i class="icon-like"></i>01
+																</li>
+																<li>
+																	<i class="icon-comment"></i>02
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right_bar left_content">
+					<div class="right_map">
+						<img alt="" src="{% static 'images/map.png' %}">
+					</div>
+					<img alt="" class="img" src="{% static 'images/ad.jpg' %}">
+					
+					<div class="add_box">
+						<h5>GO EXPLORING!</h5>
+						<h5>Download the Deliva app and discover great restaurants around on-the-go!</h5>
+						<img src="{% static 'images/addbox.jpg' %}">
+						<a href="#">OR LET US TEXT YOU A DOWNLOAD LINK</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+		
+	{% endblock %}

@@ -23,7 +23,164 @@
 		</head>
 		<body>
 			<main>
-				
+				<div class="top_header">
+					<div class="container">
+			            <div id="mobile-nav"><i class="fa fa-bars"></i></div>
+			            <div class="slide">
+			            <p class="slide_back">Back</p>
+			                    <div class="fixed_bar">
+
+										<div class="subpage_left search_left" style="padding-top:5px;">
+											<h3 class="filter_icon">SORT BY</h3>
+											<ul class="checkbox radiobox">
+												<li>
+													<input id="radio1" name="a" type="radio">
+													<label for="radio1">Vegetarian</label>
+												</li>
+												<li>
+													<input id="radio2" name="a" type="radio">
+													<label for="radio2">Non Vegetarian</label>
+												</li>
+											</ul>
+
+											<h3 class="filter_icon">SORT BY</h3>
+											<ul class="checkbox radiobox">
+												<li>
+													<input id="radio1" name="a" type="radio">
+													<label for="radio1">Price - Low to High</label>
+												</li>
+												<li>
+													<input id="radio2" name="a" type="radio">
+													<label for="radio2">Price - Hight to Low</label>
+												</li>
+												<li>
+													<input id="radio3" name="a" type="radio">
+													<label for="radio3">Rating Hight to Low</label>
+												</li>
+											</ul>
+											<h3 class="cuisine_icon">CUISINE</h3>
+											<ul class="checkbox radiobox">
+												<li>
+													<input id="radio12" name="b" type="radio">
+													<label for="radio12">Continental (52)</label>
+												</li>
+												<li>
+													<input id="radio13" name="b" type="radio">
+													<label for="radio13">Chinees (8)</label>
+												</li>
+												<li>
+													<input id="radio14" name="b" type="radio">
+													<label for="radio14">Japanese (12)</label>
+												</li>
+												<li>
+													<input id="radio4" name="b" type="radio">
+													<label for="radio4">Sushi (25)</label>
+												</li>
+												<li>
+													<input id="radio5" name="b" type="radio">
+													<label for="radio5">Steakhouse (62)</label>
+												</li>
+												<li>
+													<input id="radio6" name="b" type="radio">
+													<label for="radio6">Seafood (35)</label>
+												</li>
+												<li>
+													<input id="radio7" name="b" type="radio">
+													<label for="radio7">African (54)</label>
+												</li>
+												<li>
+													<input id="radio8" name="b" type="radio">
+													<label for="radio8">Italian (23)</label>
+												</li>
+												<li>
+													<input id="radio9" name="b" type="radio">
+													<label for="radio9">Asian (20)</label>
+												</li>
+												<li>
+													<input id="radio10" name="b" type="radio">
+													<label for="radio10">Thai (45)</label>
+												</li>
+												<li>
+													<input id="radio11" name="b" type="radio">
+													<label for="radio11">Cafe (80)</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+			                </div>
+
+
+
+						<div class="logo">
+							<a href="{% url 'www:home' %}"><p class="txt_logo"><img src="{% static 'images/mobile_logo.png' %}" ></p><img class="web_logo" alt="" src="{% static 'images/logo.png' %}"></a><br>
+
+			                <p class="eat">Eat . <span>Share</span> . Enjoy</p>
+						</div>
+						<div class="mynav">
+			            	<div class="form_close"><i class="fa fa-close"></i></div>
+			            </div>
+						<div class="top_right_box">
+							<a href="#"><span class="own">Own a Restaurant?</span></a>
+							<div class="profile_pic">
+								<span>3</span>
+								<a href="#" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<img alt="" src="{% static 'images/profile.png' %}">
+									<i></i>
+								</a>
+								<ul class="profile_link dropdown-menu" aria-labelledby="dLabel">
+									<li><a href="mygfift.html">My sGifts</a></li>
+									<li><a href="myprofile.html">My Favorites</a></li>
+									<li><a href="myprofile.html">Friends</a></li>
+									<li><a href="#">My Subscription</a></li>
+									<li><a href="wallet.html">My Wallets</a></li>
+									<li><a href="myprofile.html">ETiboy Demas</a></li>
+									<li><a href="#">Sign Out</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			    <div class="back_img">
+					<img alt="" src="{% static 'images/bg_img.jpg' %}">
+				</div>
+				<div class="full_sub_header" style="min-height: 401px;>
+					<div class="container">
+
+						<h3 class="itl_head">Meals, Dine <span> and Share</span></h3>
+						<div class="header_search_box">
+							<form action="{% url 'www:find-restaurants' %}" method="get">
+								<div class="location_search">
+									<!-- <input type="text" placeholder="Bangalore" value="Bangalore"> -->
+									<select class="js-states form-control" name="city">
+										<optgroup label="India">
+											<option value="Bangalore">Bengaluru</option>
+											<option value="Mumbai">Mumbai</option>
+											<option value="chennai">Chennai</option>
+											<option value="kolkata">Kolkaa</option>
+											<option value="hyderabad">Hyderbad</option>
+											<option value="chandigarh">Chandigarh</option>
+										</optgroup>
+										<optgroup label="usa">
+											<option value="new york">New York City</option>
+											<option value="los angeles">Los Angeles</option>
+											<option value="chicago">Chicago</option>
+											<option value="san francisco">San Francisco</option>
+											<option value="houston">Houston</option>
+											<option value="boston">Boston</option>
+										</optgroup>
+									</select>
+								</div>
+								<div class="keyword_search">
+										<span></span>
+										<input type="text" placeholder="Search for Restaurant, cuisine or a dish" name='area_name'>
+										<button>SEARCH</button>
+									</div>
+							</form>
+						</div>
+					</div>
+				</div>
 				{% block content %}
 
 				{% endblock %}
@@ -95,7 +252,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="sub_footer_info">
-						<img alt="" class="footer_logo" src="images/logo.png">
+						<img alt="" class="footer_logo" src="{% static 'images/logo.png' %}">
 						<ul class="footer_navbar">
 							<li><a href="#">About us</a></li>
 							<li><a href="#">Blog</a></li>
