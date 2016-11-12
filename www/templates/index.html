@@ -105,9 +105,13 @@
 				<div class="display_bar">
 					<div class="tab_stop">
 						<div class="tab_head">
-							<a class="active today_menu">Mains</a>
+							{% for category in foodCategories %}
+								<a class='rs_menu'>{{ category.name}}</a>
+							{% endfor %}
+							<!--<a class="active today_menu">Mains</a>
 							<a class="rs_menu">Appetizers</a>
 							<a class="rs_menu">Salads</a>
+							!-->
 						</div>
 					</div>
 					<div class="tab_body">

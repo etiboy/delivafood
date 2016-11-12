@@ -65,7 +65,7 @@ class Food(models.Model):
 
 class TodaySpecial(models.Model):
 	food = models.ForeignKey(Food, on_delete=models.SET_NULL, null=True)
-
+	kitchen = models.ForeignKey(Kitchen, on_delete=models.SET_NULL, null=True)
 
 
 

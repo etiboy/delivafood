@@ -7,7 +7,8 @@ from .models import Kitchen,Food,Area,Cuisine,FoodCategory,TodaySpecial
 def home(request):
 	homePageMeals = Food.objects.filter(kitchen__area__code__contains = "560")
 	todaySpecial = TodaySpecial.objects.get(pk=1)
-	return render(request, 'index.html', {'meals': homePageMeals, 'special': todaySpecial.food})
+	foodCategories = FoodCategory.objects.all()
+	return render(request, 'index.html', {'meals':homePageMeals, 'special':todaySpecial.food, 'foodCategories':foodCategories})
 
 def foodDetails(request,food_id,food_name):
 	foodDetail = get_object_or_404(Food, pk=food_id)
@@ -24,5 +25,8 @@ def findRestaurants(request):
 
 def homeArea(request,area_name):
 	homePageMeals = Food.objects.filter(kitchen__area__name = area_name)
-	todaySpecial = TodaySpecial.objects.filter(food__kitchen__area__name = area_name)
-	return render(request, 'index.html', {'meals':homePageMeals, 'special': todaySpecial[0].foode})
+	try:
+		todaySpecial = TodaySpecial.objects.filter(kitchen__area__name = area_name)
+	except Exception:
+		todaySpecial = TodaySpecial.objects.get(pk=1)
+	return render(request, 'index.html', {'meals':homePageMeals, 'special': todaySpecial[0].food})
